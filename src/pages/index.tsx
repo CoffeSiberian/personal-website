@@ -18,7 +18,7 @@ const HomePageHeader = (): JSX.Element => {
 			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
 				<a
 					className="max-w-xs rounded-full"
-					href="https://twitter.com/dan_abramov"
+					href="https://github.com/CoffeSiberian"
 				>
 					<img
 						className="rounded-full"
