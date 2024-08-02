@@ -75,7 +75,7 @@ const config: Config = {
 				},
 				{ to: "/blog", label: "Blog", position: "left" },
 				{
-					href: "https://github.com/CoffeSiberian/personal-website",
+					href: "https://github.com/CoffeSiberian/",
 					label: "GitHub",
 					position: "right",
 				},
