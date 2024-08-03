@@ -10,22 +10,22 @@
 @tailwind utilities;
 
 :root {
-	--ifm-color-primary: #bb8255;
-	--ifm-color-primary-dark: #af7446;
-	--ifm-color-primary-darker: #a56e42;
-	--ifm-color-primary-darkest: #885a36;
-	--ifm-color-primary-light: #c39068;
-	--ifm-color-primary-lighter: #c79772;
-	--ifm-color-primary-lightest: #d2ad8f;
+	--ifm-color-primary: #a68168;
+	--ifm-color-primary-dark: #99735a;
+	--ifm-color-primary-darker: #906d55;
+	--ifm-color-primary-darkest: #775a46;
+	--ifm-color-primary-light: #b08f79;
+	--ifm-color-primary-lighter: #b59681;
+	--ifm-color-primary-lightest: #c4ac9b;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-	--ifm-color-primary: #eaa46d;
-	--ifm-color-primary-dark: #e6914f;
-	--ifm-color-primary-darker: #e48840;
-	--ifm-color-primary-darkest: #d26d1e;
-	--ifm-color-primary-light: #eeb78b;
-	--ifm-color-primary-lighter: #f0c09a;
-	--ifm-color-primary-lightest: #f7dcc7;
+	--ifm-color-primary: #c5ac9c;
+	--ifm-color-primary-dark: #b89986;
+	--ifm-color-primary-darker: #b1907b;
+	--ifm-color-primary-darkest: #9c745b;
+	--ifm-color-primary-light: #d2bfb2;
+	--ifm-color-primary-lighter: #d9c8bd;
+	--ifm-color-primary-lightest: #ece4df;
 }

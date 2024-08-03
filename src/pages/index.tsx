@@ -1,18 +1,18 @@
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomeProyects from "@site/src/components/proyects/";
 import Heading from "@theme/Heading";
-
-import styles from "./index.module.css";
 
 // icons
 import { IconMail, IconFileText } from "@tabler/icons-react";
 
 const HomePageHeader = (): JSX.Element => {
 	return (
-		<header className={clsx("hero hero--primary", styles.heroBanner)}>
+		<header
+			className={
+				"hero hero--primary relative overflow-hidden p-8 text-center md:p-16"
+			}
+		>
 			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
 				<div className="flex flex-col gap-5">
 					<a
@@ -42,12 +42,7 @@ const HomePageHeader = (): JSX.Element => {
 						entendimiento técnico de bajo nivel, que es donde más especialidad
 						tengo, entregando resultados de calidad.
 					</p>
-					<div
-						className={clsx(
-							styles.buttons,
-							"flex flex-col-reverse gap-3 md:flex-row"
-						)}
-					>
+					<div className={"flex flex-col-reverse gap-3 md:flex-row"}>
 						<Link
 							className="button button--lg button--info flex items-center gap-1"
 							to="mailto:siberiancoffe@outlook.cl"
@@ -67,10 +62,8 @@ const HomePageHeader = (): JSX.Element => {
 };
 
 const Home = (): JSX.Element => {
-	const { siteConfig } = useDocusaurusContext();
-
 	return (
-		<Layout title={siteConfig.title}>
+		<Layout>
 			<HomePageHeader />
 			<main className="p-3">
 				<h2 className="text-center text-3xl">Proyectos</h2>

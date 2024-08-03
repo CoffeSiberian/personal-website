@@ -20,11 +20,14 @@ const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 				<div className="card__header">
 					<div className="flex flex-row gap-2">
 						{proyect.tecnologies.map((tecnology) => (
-							<div className="badge bg-yellow-900">
+							<div
+								style={{ backgroundColor: "var(--ifm-color-primary-darkest)" }}
+								className="badge"
+							>
 								<div className="flex items-center gap-1">
 									<span>{tecnology.name}</span>
 									<img
-										className="w-full max-w-5 rounded-full"
+										className="w-full max-w-5 rounded-sm"
 										src={tecnology.image}
 										alt={tecnology.name}
 										title={tecnology.name}
@@ -78,6 +81,7 @@ const HomeProyects = () => {
 				"Es una aplicación web creada con la finalidad de facilitar una integración con empresas virtuales en TruckersMP",
 			image: "img/proyects/los-andes.webp",
 			github: "https://github.com/CoffeSiberian/losandes-react-site",
+			url: "https://andesvtc.com/",
 			tecnologies: [
 				{
 					name: "React",
@@ -121,7 +125,7 @@ const HomeProyects = () => {
 	];
 
 	return (
-		<div className="grid grid-flow-row grid-cols-1 justify-items-center gap-5 md:grid-cols-3">
+		<div className="grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2 lg:grid-cols-3">
 			{proyects.map((proyect) => (
 				<ProyectCard proyect={proyect} key={proyect.id} />
 			))}
