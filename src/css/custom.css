@@ -10,6 +10,7 @@
 @tailwind utilities;
 
 :root {
+	--ifm-background-color: #f5f6f7;
 	--ifm-color-primary: #a68168;
 	--ifm-color-primary-dark: #99735a;
 	--ifm-color-primary-darker: #906d55;
@@ -17,10 +18,12 @@
 	--ifm-color-primary-light: #b08f79;
 	--ifm-color-primary-lighter: #b59681;
 	--ifm-color-primary-lightest: #c4ac9b;
+	--ifm-color-bg-cards: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
+	--ifm-background-color-dark: #1a1a1a;
 	--ifm-color-primary: #c5ac9c;
 	--ifm-color-primary-dark: #b89986;
 	--ifm-color-primary-darker: #b1907b;
@@ -28,4 +31,13 @@
 	--ifm-color-primary-light: #d2bfb2;
 	--ifm-color-primary-lighter: #d9c8bd;
 	--ifm-color-primary-lightest: #ece4df;
+	--ifm-color-bg-cards: #242526;
+}
+
+body {
+	background-color: var(--ifm-background-color);
+}
+
+body[data-theme="dark"] {
+	background-color: var(--ifm-background-color-dark);
 }

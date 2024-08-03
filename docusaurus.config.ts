@@ -47,6 +47,55 @@ const config: Config = {
 
 	themeConfig: {
 		image: "img/proyects/los-andes.webp",
+		metadata: [
+			{
+				name: "description",
+				content:
+					"Portafolio de Fernando Garrido, desarrollador Full Stack con experiencia en tecnologías web y backend.",
+			},
+			{
+				name: "msapplication-TileColor",
+				content: "#99735a",
+			},
+			{
+				name: "theme-color",
+				content: "#99735a",
+			},
+			{
+				name: "og:type",
+				content: "website",
+			},
+			{
+				name: "og:image",
+				content: "img/proyects/los-andes.webp",
+			},
+			{
+				name: "og:description",
+				content:
+					"Portafolio de Fernando Garrido, desarrollador Full Stack con experiencia en tecnologías web y backend.",
+			},
+			{
+				name: "og:title",
+				content: "SiberianCoffe - Full Stack Developer",
+			},
+			{
+				name: "twitter:title",
+				content: "SiberianCoffe - Full Stack Developer",
+			},
+			{
+				name: "twitter:description",
+				content:
+					"Portafolio de Fernando Garrido, desarrollador Full Stack con experiencia en tecnologías web y backend.",
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image",
+			},
+			{
+				name: "twitter:image",
+				content: "img/proyects/los-andes.webp",
+			},
+		],
 		navbar: {
 			title: "SiberianCoffe",
 			logo: {
@@ -54,7 +103,11 @@ const config: Config = {
 				src: "img/logo.svg",
 			},
 			items: [
-				{ to: "/blog", label: "Blog", position: "left" },
+				{
+					to: "/blog",
+					label: "Blog",
+					position: "right",
+				},
 				{
 					href: "https://github.com/CoffeSiberian/",
 					label: "GitHub",

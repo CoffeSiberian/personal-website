@@ -15,8 +15,11 @@ interface Proyect {
 
 const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 	return (
-		<div className="card-demo flex max-w-md">
-			<div className="card">
+		<div className="flex max-w-md">
+			<div
+				style={{ backgroundColor: "var(--ifm-color-bg-cards)" }}
+				className="card drop-shadow-xl"
+			>
 				<div className="card__header">
 					<div className="flex flex-row gap-2">
 						{proyect.tecnologies.map((tecnology) => (
