@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import HomeProyects from "@site/src/components/proyects/";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -11,24 +11,27 @@ import styles from "./index.module.css";
 import { IconMail, IconFileText } from "@tabler/icons-react";
 
 const HomePageHeader = (): JSX.Element => {
-	const { siteConfig } = useDocusaurusContext();
-
 	return (
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
-				<a
-					className="max-w-xs rounded-full"
-					href="https://github.com/CoffeSiberian"
-				>
-					<img
-						className="rounded-full"
-						alt="SiberianCoffe Profile"
-						src="https://avatars.githubusercontent.com/u/61036343?v=4"
-					/>
-				</a>
+				<div className="flex flex-col gap-5">
+					<a
+						className="max-w-xs rounded-full"
+						href="https://github.com/CoffeSiberian"
+					>
+						<img
+							className="rounded-full"
+							alt="SiberianCoffe Profile"
+							src="https://avatars.githubusercontent.com/u/61036343?v=4"
+						/>
+					</a>
+					<p className="text-2xl">
+						<b>Fernando Garrido</b>
+					</p>
+				</div>
 				<div className="flex flex-col items-center gap-3">
 					<Heading as="h1" className="hero__title">
-						{siteConfig.title}
+						Desarrollador Full Stack
 					</Heading>
 					<p className="hero__subtitle max-w-3xl">
 						Soy un apasionado desarrollador full stack con experiencia en
@@ -39,7 +42,12 @@ const HomePageHeader = (): JSX.Element => {
 						entendimiento técnico de bajo nivel, que es donde más especialidad
 						tengo, entregando resultados de calidad.
 					</p>
-					<div className={clsx(styles.buttons, "gap-3")}>
+					<div
+						className={clsx(
+							styles.buttons,
+							"flex flex-col-reverse gap-3 md:flex-row"
+						)}
+					>
 						<Link
 							className="button button--lg button--info flex items-center gap-1"
 							to="mailto:siberiancoffe@outlook.cl"
@@ -64,7 +72,10 @@ const Home = (): JSX.Element => {
 	return (
 		<Layout title={siteConfig.title}>
 			<HomePageHeader />
-			<main></main>
+			<main className="p-3">
+				<h2 className="text-center text-3xl">Proyectos</h2>
+				<HomeProyects />
+			</main>
 		</Layout>
 	);
 };
