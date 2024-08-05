@@ -44,13 +44,13 @@ const HomePageHeader = (): JSX.Element => {
 					</p>
 					<div className={"flex flex-col-reverse gap-3 md:flex-row"}>
 						<Link
-							className="button button--lg button--info flex items-center gap-1"
+							className="button button--lg button--info flex items-center justify-center gap-1"
 							to="mailto:siberiancoffe@outlook.cl"
 						>
 							Contacto
 							<IconMail />
 						</Link>
-						<Link className="button button--lg button--success flex items-center gap-1">
+						<Link className="button button--lg button--success flex items-center justify-center gap-1">
 							Descargar CV
 							<IconFileText />
 						</Link>
