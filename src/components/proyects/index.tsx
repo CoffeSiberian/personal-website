@@ -1,4 +1,5 @@
 interface Tecnology {
+	id: number;
 	name: string;
 	image: string;
 }
@@ -13,6 +14,9 @@ interface Proyect {
 	tecnologies: Tecnology[];
 }
 
+// icons
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
+
 const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 	return (
 		<div className="flex max-w-md">
@@ -26,6 +30,7 @@ const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 							<div
 								style={{ backgroundColor: "var(--ifm-color-primary-darkest)" }}
 								className="badge"
+								key={tecnology.id}
 							>
 								<div className="flex items-center gap-1">
 									<span>{tecnology.name}</span>
@@ -48,6 +53,26 @@ const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 				<div className="card__image">
 					<img src={proyect.image} alt="proyect image" />
 				</div>
+				<div className="button-group button-group--block">
+					{proyect.github && (
+						<a
+							href={proyect.github}
+							target="_blank"
+							className="button button--info button--block flex justify-center rounded-none align-middle"
+						>
+							GitHub <IconBrandGithub />
+						</a>
+					)}
+					{proyect.url && (
+						<a
+							href={proyect.url}
+							target="_blank"
+							className="button button--primary button--block flex justify-center rounded-none align-middle"
+						>
+							Visitar web <IconExternalLink />
+						</a>
+					)}
+				</div>
 			</div>
 		</div>
 	);
@@ -64,14 +89,17 @@ const HomeProyects = () => {
 			github: "https://github.com/CoffeSiberian/truck-tools",
 			tecnologies: [
 				{
+					id: 1,
 					name: "React",
 					image: "img/tecnologies/react.svg",
 				},
 				{
+					id: 2,
 					name: "TypeScript",
 					image: "img/tecnologies/typescript.svg",
 				},
 				{
+					id: 3,
 					name: "Rust",
 					image: "img/tecnologies/rust.svg",
 				},
@@ -87,14 +115,17 @@ const HomeProyects = () => {
 			url: "https://andesvtc.com/",
 			tecnologies: [
 				{
+					id: 1,
 					name: "React",
 					image: "img/tecnologies/react.svg",
 				},
 				{
+					id: 2,
 					name: "JavaScript",
 					image: "img/tecnologies/javascript.svg",
 				},
 				{
+					id: 3,
 					name: "NodeJS",
 					image: "img/tecnologies/nodejs.svg",
 				},
@@ -108,18 +139,22 @@ const HomeProyects = () => {
 			image: "img/proyects/support.webp",
 			tecnologies: [
 				{
+					id: 1,
 					name: "React",
 					image: "img/tecnologies/react.svg",
 				},
 				{
+					id: 2,
 					name: "TypeScript",
 					image: "img/tecnologies/typescript.svg",
 				},
 				{
+					id: 3,
 					name: "NodeJS",
 					image: "img/tecnologies/nodejs.svg",
 				},
 				{
+					id: 4,
 					name: "Python",
 					image: "img/tecnologies/python.svg",
 				},
