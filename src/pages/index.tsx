@@ -4,7 +4,8 @@ import HomeProyects from "@site/src/components/proyects/";
 import Heading from "@theme/Heading";
 
 // icons
-import { IconMail, IconFileText } from "@tabler/icons-react";
+import { IoMail } from "react-icons/io5";
+import { FaRegNewspaper } from "react-icons/fa6";
 
 const HomePageHeader = (): JSX.Element => {
 	return (
@@ -48,11 +49,11 @@ const HomePageHeader = (): JSX.Element => {
 							to="mailto:siberiancoffe@outlook.cl"
 						>
 							Contacto
-							<IconMail />
+							<IoMail />
 						</Link>
 						<Link className="button button--lg button--success flex items-center justify-center gap-1">
 							Descargar CV
-							<IconFileText />
+							<FaRegNewspaper />
 						</Link>
 					</div>
 				</div>

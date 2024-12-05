@@ -15,7 +15,8 @@ interface Proyect {
 }
 
 // icons
-import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 	return (
@@ -58,18 +59,18 @@ const ProyectCard = ({ proyect }: { proyect: Proyect }): JSX.Element => {
 						<a
 							href={proyect.github}
 							target="_blank"
-							className="button button--info button--block flex justify-center rounded-none align-middle"
+							className="button button--info button--block flex items-center justify-center gap-1 rounded-none"
 						>
-							GitHub <IconBrandGithub />
+							GitHub <FaGithub />
 						</a>
 					)}
 					{proyect.url && (
 						<a
 							href={proyect.url}
 							target="_blank"
-							className="button button--primary button--block flex justify-center rounded-none align-middle"
+							className="button button--primary button--block flex items-center justify-center gap-1 rounded-none"
 						>
-							Visitar web <IconExternalLink />
+							Visitar web <FaExternalLinkAlt />
 						</a>
 					)}
 				</div>

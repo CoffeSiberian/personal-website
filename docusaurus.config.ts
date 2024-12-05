@@ -35,8 +35,15 @@ const config: Config = {
 				},
 				blog: {
 					showReadingTime: true,
+					feedOptions: {
+						type: ["rss", "atom"],
+						xslt: true,
+					},
 					editUrl:
 						"https://github.com/CoffeSiberian/personal-website/tree/main/blog/",
+					onInlineTags: "warn",
+					onInlineAuthors: "warn",
+					onUntruncatedBlogPosts: "warn",
 				},
 				theme: {
 					customCss: "./src/css/custom.css",
