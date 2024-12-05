@@ -54,7 +54,7 @@ const HomePageHeader = (): JSX.Element => {
 						</Link>
 						<Link
 							className="button button--lg button--success flex items-center justify-center gap-1"
-							to="https://static.siberiancoffe.dev/cv/fernando_garrido_cv.pdf"
+							to="https://cdn.siberiancoffe.dev/cv/fernando_garrido_cv.pdf"
 						>
 							Descargar CV
 							<FaRegNewspaper />
