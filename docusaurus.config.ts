@@ -32,7 +32,7 @@ const config: Config = {
 				docs: {
 					sidebarPath: "./sidebars.ts",
 					editUrl:
-						"https://github.com/CoffeSiberian/personal-website/tree/main/docs/",
+						"https://github.com/CoffeSiberian/personal-website/tree/main/",
 				},
 				blog: {
 					showReadingTime: true,
@@ -41,7 +41,7 @@ const config: Config = {
 						xslt: true,
 					},
 					editUrl:
-						"https://github.com/CoffeSiberian/personal-website/tree/main/blog/",
+						"https://github.com/CoffeSiberian/personal-website/tree/main/",
 					onInlineTags: "warn",
 					onInlineAuthors: "warn",
 					onUntruncatedBlogPosts: "warn",
