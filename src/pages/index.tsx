@@ -19,6 +19,7 @@ const HomePageHeader = (): JSX.Element => {
 					<a
 						className="max-w-xs rounded-full"
 						href="https://github.com/CoffeSiberian"
+						target="_blank"
 					>
 						<img
 							className="rounded-full"
@@ -51,7 +52,11 @@ const HomePageHeader = (): JSX.Element => {
 							Contacto
 							<IoMail />
 						</Link>
-						<Link className="button button--lg button--success flex items-center justify-center gap-1">
+						<Link
+							className="button button--lg button--success flex items-center justify-center gap-1"
+							to="/cv/fernando_garrido_cv.pdf"
+							target="_blank"
+						>
 							Descargar CV
 							<FaRegNewspaper />
 						</Link>

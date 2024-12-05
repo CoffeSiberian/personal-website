@@ -7,6 +7,7 @@ const config: Config = {
 	title: "SiberianCoffe - Full Stack Developer",
 	tagline: "Desarrollador Full Stack",
 	favicon: "img/favicon.ico",
+	staticDirectories: ["static"],
 
 	url: "https://siberiancoffe.dev/",
 	baseUrl: "/",
