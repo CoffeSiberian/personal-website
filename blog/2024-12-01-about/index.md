@@ -5,13 +5,13 @@ authors: [siberiancoffe]
 tags: []
 ---
 
-Soy un desarrollador con experiencia en tecnologias WEB y diversas tecnologias que eh aprendido de forma autonoma
+Soy desarrollador con experiencia en tecnologías web y en diversas áreas que he explorado de forma autodidacta.
 
 <!-- truncate -->
 
-## Sobre mí 👋
+## Hola 👋
 
-Hola, soy **Fernando Garrido**, también conocido como _SiberianCoffe_. Soy un apasionado de las tecnologías y la programación, con más de 6 años de experiencia **dedicados al estudio**, la práctica y la aplicación de mis conocimientos en una amplia variedad de proyectos, tanto de código abierto como de productos privados durante mi proceso de aprendizaje en la Universidad.
+Soy **Fernando Garrido**, también conocido como _SiberianCoffe_. Soy un apasionado de las tecnologías y la programación, con más de 6 años de experiencia **dedicados al estudio**, la práctica y la aplicación de mis conocimientos en una amplia variedad de proyectos, tanto de código abierto como de productos privados durante mi proceso de aprendizaje en la Universidad.
 
 ## Mi experiencia 🌟
 

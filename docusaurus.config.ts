@@ -4,7 +4,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-	title: "SiberianCoffe - Full Stack Developer",
+	title: "Fernando Garrido - Full Stack Developer | SiberianCoffee",
 	tagline: "Desarrollador Full Stack",
 	favicon: "img/favicon.ico",
 	staticDirectories: ["static"],
