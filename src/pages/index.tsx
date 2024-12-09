@@ -74,7 +74,7 @@ const HomePageHeader = (): JSX.Element => {
 					<Heading as="h1" className="hero__title">
 						Desarrollador Full Stack
 					</Heading>
-					<p className="hero__subtitle max-w-3xl font-semibold">
+					<p className="hero__subtitle mx-1 max-w-3xl font-semibold md:mx-0">
 						Soy un apasionado desarrollador full stack con experiencia en
 						tecnologías como <b>JavaScript, TypeScript, Python y Rust</b>. He
 						llevado a cabo diversos proyectos personales, desde la creación de
