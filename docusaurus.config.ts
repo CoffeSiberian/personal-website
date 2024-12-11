@@ -84,11 +84,11 @@ const config: Config = {
 			},
 			{
 				name: "og:title",
-				content: "SiberianCoffe - Full Stack Developer",
+				content: "Fernando Garrido - Full Stack Developer",
 			},
 			{
 				name: "twitter:title",
-				content: "SiberianCoffe - Full Stack Developer",
+				content: "Fernando Garrido - Full Stack Developer",
 			},
 			{
 				name: "twitter:description",
