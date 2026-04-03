@@ -1,26 +1,45 @@
 {
-  "name": "portafolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.2.2",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.2",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+	"name": "portafolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint",
+		"format": "prettier --write ."
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"singleQuote": false,
+		"trailingComma": "es5",
+		"useTabs": true,
+		"arrowParens": "always",
+		"endOfLine": "auto",
+		"plugins": [
+			"prettier-plugin-tailwindcss"
+		]
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.2.4",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^1.7.0",
+		"next": "16.2.2",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"tailwind-merge": "^3.5.0"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.2",
+		"prettier": "3.8.1",
+		"prettier-plugin-tailwindcss": "0.7.2",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	}
 }
