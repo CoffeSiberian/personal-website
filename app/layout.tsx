@@ -54,7 +54,9 @@ export default function RootLayout({
 					}}
 				>
 					<Navbar />
-					<main style={{ flex: 1 }}>{children}</main>
+					<main style={{ flex: 1, paddingTop: "var(--navbar-height)" }}>
+						{children}
+					</main>
 					<Footer />
 				</div>
 			</body>

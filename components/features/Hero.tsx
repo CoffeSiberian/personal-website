@@ -14,11 +14,12 @@ export const Hero = () => {
 	return (
 		<section
 			style={{
-				minHeight: "100vh",
+				minHeight: "calc(100svh - var(--navbar-height))",
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center",
-				padding: "120px 24px 80px",
+				padding:
+					"var(--hero-padding-top) var(--page-padding-x) var(--hero-padding-bottom)",
 			}}
 		>
 			<div
@@ -29,7 +30,7 @@ export const Hero = () => {
 					flexDirection: "column",
 					alignItems: "center",
 					textAlign: "center",
-					gap: 32,
+					gap: "var(--hero-gap)",
 				}}
 			>
 				<Avatar src={SITE_CONFIG.photo} alt={SITE_CONFIG.fullName} />
@@ -44,7 +45,7 @@ export const Hero = () => {
 					<h1
 						style={{
 							fontFamily: THEME.fonts.display,
-							fontSize: 42,
+							fontSize: "var(--hero-font-size)",
 							fontWeight: 400,
 							color: THEME.colors.text.primary,
 							letterSpacing: "-0.03em",

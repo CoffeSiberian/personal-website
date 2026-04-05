@@ -16,15 +16,7 @@ export const BlogPostItem = ({ post, isLast }: BlogPostItemProps) => {
 	return (
 		<div>
 			<Link href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
-				<HoverFade
-					style={{
-						padding: "24px 0",
-						display: "flex",
-						justifyContent: "space-between",
-						alignItems: "flex-start",
-						gap: 24,
-					}}
-				>
+				<HoverFade style={{ padding: "24px 0" }} className="post-item-row">
 					<div style={{ flex: 1 }}>
 						<h3
 							style={{
@@ -56,15 +48,7 @@ export const BlogPostItem = ({ post, isLast }: BlogPostItemProps) => {
 							</div>
 						)}
 					</div>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							gap: 8,
-							flexShrink: 0,
-							paddingTop: 4,
-						}}
-					>
+					<div className="post-item-meta">
 						<span
 							style={{
 								fontFamily: THEME.fonts.body,

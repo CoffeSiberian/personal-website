@@ -4,15 +4,18 @@ interface HoverFadeProps {
 	children: React.ReactNode;
 	onClick?: () => void;
 	style?: React.CSSProperties;
+	className?: string;
 }
 
 export const HoverFade = ({
 	children,
 	onClick,
 	style: extra = {},
+	className,
 }: HoverFadeProps) => (
 	<div
 		onClick={onClick}
+		className={className}
 		style={{
 			transition: "opacity 0.2s",
 			cursor: onClick ? "pointer" : "default",

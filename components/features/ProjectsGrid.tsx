@@ -17,7 +17,8 @@ export const ProjectsGrid = ({
 		<div
 			style={{
 				display: "grid",
-				gridTemplateColumns: "repeat(auto-fill, minmax(310px, 1fr))",
+				gridTemplateColumns:
+					"repeat(auto-fill, minmax(var(--grid-min-col), 1fr))",
 				gap: 20,
 			}}
 		>

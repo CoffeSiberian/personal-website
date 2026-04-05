@@ -1,5 +1,107 @@
 @import "tailwindcss";
 
+/* ─── Responsive layout tokens ───────────────────────── */
+:root {
+	--navbar-height: 60px;
+	--page-padding-top: 80px;
+	--page-padding-x: 24px;
+	--hero-padding-top: 120px;
+	--hero-padding-bottom: 80px;
+	--hero-gap: 32px;
+	--hero-font-size: 42px;
+	--grid-min-col: 310px;
+}
+
+@media (max-width: 640px) {
+	:root {
+		--page-padding-top: 48px;
+		--page-padding-x: 16px;
+		--hero-padding-top: 80px;
+		--hero-padding-bottom: 48px;
+		--hero-gap: 24px;
+		--hero-font-size: 30px;
+		--grid-min-col: 280px;
+	}
+}
+
+/* Navbar responsive */
+.nav-links-desktop {
+	display: flex;
+	gap: 4px;
+}
+
+.nav-hamburger {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 640px) {
+	.nav-links-desktop {
+		display: none;
+	}
+	.nav-hamburger {
+		display: flex;
+	}
+}
+
+.nav-mobile-menu {
+	position: fixed;
+	top: var(--navbar-height);
+	left: 0;
+	right: 0;
+	z-index: 49;
+	background-color: rgba(250, 250, 249, 0.97);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border-bottom: 1px solid rgba(168, 162, 158, 0.08);
+	padding: 8px 16px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.nav-mobile-backdrop {
+	position: fixed;
+	inset: 0;
+	top: var(--navbar-height);
+	z-index: 48;
+}
+
+/* BlogPostItem responsive */
+.post-item-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+@media (max-width: 640px) {
+	.post-item-row {
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+.post-item-meta {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;
+	padding-top: 4px;
+}
+
+@media (max-width: 640px) {
+	.post-item-meta {
+		padding-top: 0;
+	}
+}
+
 :root {
 	--background: 0 0% 100%;
 	--foreground: 20 14.3% 4.1%;
