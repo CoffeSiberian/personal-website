@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ─── Responsive layout tokens ───────────────────────── */
+:root {
+	--navbar-height: 60px;
+	--page-padding-top: 80px;
+	--page-padding-x: 24px;
+	--hero-padding-top: 120px;
+	--hero-padding-bottom: 80px;
+	--hero-gap: 32px;
+	--hero-font-size: 42px;
+	--grid-min-col: 310px;
+}
+
+@media (max-width: 640px) {
+	:root {
+		--page-padding-top: 48px;
+		--page-padding-x: 16px;
+		--hero-padding-top: 80px;
+		--hero-padding-bottom: 48px;
+		--hero-gap: 24px;
+		--hero-font-size: 30px;
+		--grid-min-col: 280px;
+	}
+}
+
+/* Navbar responsive */
+.nav-links-desktop {
+	display: flex;
+	gap: 4px;
+}
+
+.nav-hamburger {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 640px) {
+	.nav-links-desktop {
+		display: none;
+	}
+	.nav-hamburger {
+		display: flex;
+	}
+}
+
+.nav-mobile-menu {
+	position: fixed;
+	top: var(--navbar-height);
+	left: 0;
+	right: 0;
+	z-index: 49;
+	background-color: rgba(250, 250, 249, 0.97);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border-bottom: 1px solid rgba(168, 162, 158, 0.08);
+	padding: 8px 16px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.nav-mobile-backdrop {
+	position: fixed;
+	inset: 0;
+	top: var(--navbar-height);
+	z-index: 48;
+}
+
+/* BlogPostItem responsive */
+.post-item-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+@media (max-width: 640px) {
+	.post-item-row {
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+.post-item-meta {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;
+	padding-top: 4px;
+}
+
+@media (max-width: 640px) {
+	.post-item-meta {
+		padding-top: 0;
+	}
+}
+
+:root {
+	--background: 0 0% 100%;
+	--foreground: 20 14.3% 4.1%;
+	--card: 0 0% 100%;
+	--card-foreground: 20 14.3% 4.1%;
+	--popover: 0 0% 100%;
+	--popover-foreground: 20 14.3% 4.1%;
+	--primary: 24 9.8% 10%;
+	--primary-foreground: 60 9.1% 97.8%;
+	--secondary: 60 4.8% 95.9%;
+	--secondary-foreground: 24 9.8% 10%;
+	--muted: 60 4.8% 95.9%;
+	--muted-foreground: 25 5.3% 44.7%;
+	--accent: 60 4.8% 95.9%;
+	--accent-foreground: 24 9.8% 10%;
+	--destructive: 0 84.2% 60.2%;
+	--destructive-foreground: 60 9.1% 97.8%;
+	--border: 20 5.9% 90%;
+	--input: 20 5.9% 90%;
+	--ring: 20 14.3% 4.1%;
+	--radius: 0.5rem;
+}
+
+.dark {
+	--background: 20 14.3% 4.1%;
+	--foreground: 60 9.1% 97.8%;
+	--card: 20 14.3% 4.1%;
+	--card-foreground: 60 9.1% 97.8%;
+	--popover: 20 14.3% 4.1%;
+	--popover-foreground: 60 9.1% 97.8%;
+	--primary: 60 9.1% 97.8%;
+	--primary-foreground: 24 9.8% 10%;
+	--secondary: 12 6.5% 15.1%;
+	--secondary-foreground: 60 9.1% 97.8%;
+	--muted: 12 6.5% 15.1%;
+	--muted-foreground: 24 5.4% 63.9%;
+	--accent: 12 6.5% 15.1%;
+	--accent-foreground: 60 9.1% 97.8%;
+	--destructive: 0 62.8% 30.6%;
+	--destructive-foreground: 60 9.1% 97.8%;
+	--border: 12 6.5% 15.1%;
+	--input: 12 6.5% 15.1%;
+	--ring: 24 5.7% 82.9%;
+}
+
+@theme inline {
+	--color-background: hsl(var(--background));
+	--color-foreground: hsl(var(--foreground));
+	--color-card: hsl(var(--card));
+	--color-card-foreground: hsl(var(--card-foreground));
+	--color-popover: hsl(var(--popover));
+	--color-popover-foreground: hsl(var(--popover-foreground));
+	--color-primary: hsl(var(--primary));
+	--color-primary-foreground: hsl(var(--primary-foreground));
+	--color-secondary: hsl(var(--secondary));
+	--color-secondary-foreground: hsl(var(--secondary-foreground));
+	--color-muted: hsl(var(--muted));
+	--color-muted-foreground: hsl(var(--muted-foreground));
+	--color-accent: hsl(var(--accent));
+	--color-accent-foreground: hsl(var(--accent-foreground));
+	--color-destructive: hsl(var(--destructive));
+	--color-destructive-foreground: hsl(var(--destructive-foreground));
+	--color-border: hsl(var(--border));
+	--color-input: hsl(var(--input));
+	--color-ring: hsl(var(--ring));
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+}
+
+body {
+	background: hsl(var(--background));
+	color: hsl(var(--foreground));
+	font-family: Arial, Helvetica, sans-serif;
+}
